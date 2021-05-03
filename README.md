@@ -2,6 +2,7 @@
 <img src="./Assets/graph-logo.png" alt="graphql-logo" width="80px"/>
 <img src="./Assets/node.png" alt="node-logo"  width="90px" />
 <img src="./Assets/apollo-logo.png" alt="apollo-logo"  width="90px" />
+<img src="./Assets/prisma.png" alt="apollo-logo"  width="200px" />
 </p>
 
 <h1 align="center" style="font-weight:bold">Learning-GraphQL-and-Apollo</h1>
@@ -97,7 +98,7 @@ Core Concepts
 -   **Resolver Functions:** Needs to be defined for mutations or subscriptions, which basically resolves each field in the query given by the user.
 
 <h3 style="font-weight: bold">
-GraphQL Clien
+GraphQL Client
 </h3>
 
 -   Imperative data fetching
