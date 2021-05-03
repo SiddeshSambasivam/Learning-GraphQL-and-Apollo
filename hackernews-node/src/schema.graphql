@@ -1,0 +1,26 @@
+# Defines the schema for GraphQL.
+# The exclamation mark in the type definition means that this field is required and can never be null
+
+type Query {
+    info: String!
+    feed: [Link!]!
+
+    # Fetch a single link by its `id`
+    link(id: ID!): Link
+}
+
+type Link {
+    id: ID!
+    description: String!
+    url: String!
+}
+
+type Mutation {
+    post(url: String!, description: String!): Link!
+
+    # Update a link
+    updateLink(id: ID!, url: String, description: String): Link
+
+    # Delete a link
+    deleteLink(id: ID!): Link
+}
