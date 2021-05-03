@@ -130,6 +130,13 @@ The `hackernews-node` folder contains all the files for the GraphQL server.
 -   [x] Implement resolver for fetching post by id
 -   [x] Implement resolver for updating post by id
 -   [x] Implement resolver for deleting post by id
+-   [ ] Add database
+-   [ ] Connect server and database with prism client
+-   [ ] Setup authentication
+-   [ ] Realtime GraphQL subscription
+-   [ ] Implement Filtering
+-   [ ] Implement Pagination
+-   [ ] Implement Sorting
 
 ```bash
 # Install the dependencies
@@ -166,8 +173,10 @@ In general, when adding a new feature to the API, the process will look pretty s
 
 This process is also referred to as schema-driven or schema-first development.
 
-<h3 style="font-weight: bold">
-Resources
-</h3>
+<h2 style="font-weight: bold">
+Resources (For reference)
+</h2>
 
 1. [GraphQL Server Basics: GraphQL Schemas, TypeDefs & Resolvers Explained](https://www.prisma.io/blog/graphql-server-basics-the-schema-ac5e2950214e)
+2. [Prisim Official Documentation](https://www.prisma.io/docs/getting-started/quickstart-typescript)
+3. [GraphQL Official documentation](https://graphql.org/learn/)
