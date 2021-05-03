@@ -114,3 +114,60 @@ GraphQL Client
     2. Display informatino in the UI
 
 As seen, there is a great level of abstraction in the declartive data fetching and this is abstraction is provided by apollo on the client side.
+
+<h2 style="font-weight: bold">
+Project-Development
+</h2>
+
+The `hackernews-node` folder contains all the files for the GraphQL server.
+
+**Task List**
+
+-   [x] Setup Basic schema and resolvers
+-   [x] Setup Schema for Links
+-   [x] Implement resolver for link query from in-memory db
+-   [x] Add post mutation for the links
+-   [x] Implement resolver for fetching post by id
+-   [x] Implement resolver for updating post by id
+-   [x] Implement resolver for deleting post by id
+
+```bash
+# Install the dependencies
+npm install
+npm start
+
+```
+
+Navigate to [http://localhost:4000/](`http://localhost:4000/`) to access the GraphQL playground
+
+<h3 style="font-weight: bold">
+Project Dev Notes
+</h3>
+
+`apollo-server` is a fully-featured GraphQL server. It is based on Express.js and a few other libraries to help you build production-ready GraphQL servers.
+
+Here’s a list of its features:
+
+-   GraphQL spec-compliant
+-   Realtime functionality with GraphQL subscriptions
+-   Out-of-the-box support for GraphQL Playground
+-   Extensible via Express middlewares
+-   Resolves custom directives in your GraphQL schema
+-   Query performance tracing
+-   Runs everywhere: Can be deployed via Vercel, Up, AWS Lambda, Heroku etc.
+
+Every GraphQL schema has three special root types: `Query`, `Mutation`, and `Subscription`. The root types correspond to the three operation types offered by GraphQL: queries, mutations, and subscriptions. The fields on these root types are called root fields and define the available API operations.
+
+**Extending the schema definition**
+In general, when adding a new feature to the API, the process will look pretty similar every time:
+
+1. Extend the GraphQL schema definition with a new root field (and new object types, if needed)
+2. Implement corresponding resolver functions for the added fields
+
+This process is also referred to as schema-driven or schema-first development.
+
+<h3 style="font-weight: bold">
+Resources
+</h3>
+
+1. [GraphQL Server Basics: GraphQL Schemas, TypeDefs & Resolvers Explained](https://www.prisma.io/blog/graphql-server-basics-the-schema-ac5e2950214e)
