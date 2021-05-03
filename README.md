@@ -138,7 +138,7 @@ npm start
 
 ```
 
-Navigate to [http://localhost:4000/](`http://localhost:4000/`) to access the GraphQL playground
+Navigate to [http://localhost:4000/](http://localhost:4000/) to access the GraphQL playground
 
 <h3 style="font-weight: bold">
 Project Dev Notes
